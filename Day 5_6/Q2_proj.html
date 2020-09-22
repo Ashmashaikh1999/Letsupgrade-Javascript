@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			input{
+				border-color: violet;
+			}
+			button{
+				background-color:lightblue;
+			}
+			.disp{
+				margin-top:10px;
+				width:80%;
+			}
+			table{
+				margin-top:20px;
+			}
+			th,td{
+				text-align:center;
+			}
+			
+		</style>
+	</head>
+		<body>
+		<center>
+			<div class="main">
+				<h1>Bus Details</h1>
+				<input type="text" placeholder="search by source" onkeyup="s_search()" id="s_search" >
+				<input type="text" placeholder="search by destination" onkeyup="d_search()" id="d_search"/ >
+				<div class="form">
+					<form onsubmit="addbus(event)">
+					<table border="0">
+						<tr>
+							<td>Name</td>
+							<td><input type="text" placeholder="Name of the bus"required id="name" ></td>
+						</tr>
+						<tr>
+							<td>Source</td>
+							<td><input type="text" placeholder="Source" required id="source"></td>
+						</tr>
+						<tr>
+							<td>Destination</td>
+							<td><input type="text" placeholder="Destination" required id="dest"></td>
+						</tr>
+						<tr>
+							<td>Number</td>
+							<td><input type="number" placeholder="Bus No." required id="num"></td>
+						</tr>
+						<tr>
+							<td>Passenger Capacity</td>
+							<td><input type="number" required placeholder="Capacity" id="pc"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button >Add Bus</button></td>
+						</tr>
+					</table>
+					</form>
+				</div>
+				<div class="disp">
+					<table border="5" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Sr No</th>
+								<th>Name</th>
+								<th>Source</th>
+								<th>Destination</th>
+								<th>Number</th>
+								<th>Passenger Capacity</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody class="data">
+						</tbody>
+					</table>
+				</div>
+			
+			</div>
+			<script src="C:\Users\91958\Desktop\js_project\Q2_proj.js"></script>
+		</center>	
+		</body>
+</html>
